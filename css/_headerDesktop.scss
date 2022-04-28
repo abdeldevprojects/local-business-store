@@ -1,0 +1,80 @@
+@media screen and (min-width: 991px) {
+    // Start Media Query
+    body {
+
+        background-size: cover;
+        background-position: 10% 20%;
+
+        //Start Side Header
+        .site-header {
+            .header-nav {
+                position: relative;
+                .list-items {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    top: 0vh;
+                    width: 100%;
+                    gap: 2rem;
+                    background-color: white;
+                    height: auto;
+                    // border: 1px solid black;
+                    transform: translateX(0%);
+                    li {
+                        opacity: 1;
+                        a {
+                            color: $pink-clr;
+                            font-size: 1.5rem;
+                        }
+        
+                        
+                    }
+                }
+            }
+    
+            .phone-div {
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                font-size: 1.2rem;
+            }
+    
+            .cart-div {
+                display: block;
+                border: 2px solid $black-clr;
+                border-radius: 5px;
+                padding: 5px 10px;
+    
+                .cart-btn {
+                    a {
+                        color: $black-clr;
+                        font-size: 1.2rem;
+                        i {
+                            color: $black-clr;
+                            margin-right: 5px;
+                            // font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+
+            .burger {
+                display: none;
+            }
+
+        }
+        //End Side Header
+        //Start Welcome Section
+        
+        //End Welcome Section
+
+
+
+
+    }
+    // End Media Query
+}

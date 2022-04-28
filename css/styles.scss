@@ -1,0 +1,18 @@
+
+    $font-fam : 'Satisfy', cursive;
+    $pink-clr : #FF6363;
+    $white-clr : rgb(224, 224, 224);
+    $black-clr : rgb(0, 0, 0);
+    $dark-gray : rgb(128, 128, 128);
+    $main-gray : rgb(238, 238, 238);
+
+
+@import "global";
+@import "header";
+@import "welcomeSection";
+@import "aboutUs";
+@import "store";
+@import "headerDesktop";
+@import "welcomeSectionDesktop";
+@import "aboutUsDesktop";
+@import "storeTablette";

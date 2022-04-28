@@ -1,0 +1,98 @@
+
+.site-header {
+    position: fixed;
+    display: flex;
+    min-height: 10vh;
+    gap: 7rem;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+    transition: height 0.3s;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    .shrink { 
+        height: 7vh;
+    }
+    
+
+    .header-nav {
+
+        
+
+        .list-items{
+            position: absolute;
+            top: 10vh;
+            height: 40vh;
+            right: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
+            background-color: $pink-clr;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            
+            @keyframes navLinkFade {
+                from {
+                    opacity: 0;
+                    transform: translateX(50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+
+            li {
+                opacity: 0;
+                a {
+                    color: $white-clr;
+                    font-size: 1.5rem;
+                }
+
+                
+            }
+
+            
+        }
+        
+        .nav-active {
+            transform: translate(0%);
+        }
+    }
+
+    .phone-div {
+        
+
+        display: none;
+    }
+
+    .cart-div {
+        display: none;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 5px;
+        background-color: $pink-clr;
+        margin: 3px;
+    }
+    
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .toggle .line2 {
+        opacity: 0;
+    }
+    
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    
+}
+

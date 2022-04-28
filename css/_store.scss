@@ -1,0 +1,161 @@
+.store {
+    background-color: $main-gray;
+    padding: 4rem 1.1rem;
+    
+    .inner-store {
+        
+
+        .store-title {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        /* Products Buttons */
+        .sortBtn {
+            // border: 3px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+
+            .btn {
+                border: 1px solid #000;
+                border-radius: 5px;
+                font-size: 1.1rem;
+                padding: 8px 15px;
+                text-transform: uppercase;
+                color: #000;
+                transition: 0.6s;
+
+                &:hover {
+                    background-color: #000;
+                    color: $pink-clr;
+                }
+                
+            }
+        }
+
+        /* Search Input */
+        .search {
+            // border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // max-width: 400px;    
+            padding: 2rem 2rem;
+            form {
+                .input-group {
+                    // border: 1px solid black;
+                    width: 20rem;
+                    display: flex;
+                    flex-direction: row;
+
+                    /* Search Icon*/
+                    .input{
+                        // border: 1px solid pink;
+                        background-color: $pink-clr;
+                        padding: .4rem;
+                        border-radius: 5px 0 0 5px;
+                    }
+
+                    /*Input Field*/
+                    .form-control {
+                        padding: .6rem ;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        /* Store products */
+
+        #store-items {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+
+            .store-item {
+                 max-width: 25rem;
+                
+                .card {
+
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    overflow: hidden;
+                    max-width: 500px;
+                    min-width: none;
+                    /* Start card */
+                    .img-container {
+                        position: relative;
+                        overflow: hidden;
+                        cursor: pointer;
+
+                        .store-img {
+                            transition: all 1s ease-in-out;
+                            width: 100%;
+                            
+                        }
+
+                        &:hover {
+                            .store-img {
+                                transform: scale(1.2);
+                            }
+                        }
+
+                        .store-item-icon {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            padding: 0.75rem;
+                            background: yellow;
+                            border-top-left-radius: 1rem;
+                            transition: all 1s ease-in-out;
+                            transform: translate(100%, 100%);
+                        }
+
+                        &:hover {
+                            .store-item-icon {
+                                transform: translate(0, 0);
+                            }
+                        }
+
+                        .store-item-icon:hover {
+                            color: white;
+                        }
+
+
+
+                    }
+
+                    /* text container */
+                    .card-body {
+                        
+                        padding: 1rem;
+                        .card-text {
+                            text-transform: capitalize;
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            #store-item-name {
+                                font-size: 1.2rem;
+                            }
+
+                            .store-item-value {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+
+
+                    /*End Card*/
+                }
+            }
+        }
+    }
+}

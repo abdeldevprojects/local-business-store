@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a2cfacb999.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+
+    <!-- Css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="site-header">
+        <div class="logo">
+            <img src="img/logo.svg" alt="logo">
+        </div>
+
+        <nav class="header-nav">
+            <ul class="list-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-us-section">About</a></li>
+                <li><a href="#store-items">Store</a></li>
+            </ul>
+        </nav>
+
+        <div class="phone-div">
+            <i class="fa-solid fa-phone-flip"></i>
+            <div class="phone-number"> +123 456 789</div>
+        </div>
+
+        <div class="cart-div">
+            <div class="cart-btn">
+                <a href=""><i class="fa-solid fa-cart-shopping"></i>2 Items - $10.49</a>
+            </div>
+        </div>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <!-- End Header-->
+    <!-- Start Welcome Section-->
+    <section id="welcome-section">
+        <div class="inner-welcome">
+            <h1 class="welcome-title">Welcome To <span class="highlight">Grandma's</span></h1>
+            <button type="button" class="welcome-btn">Explore</button>
+        </div>
+    </section>
+    <!-- End Welcome Section-->
+    <!-- Start About Us Section-->
+    <section id="about-us-section">
+        <div class="inner-about-us">
+            <div class="text-side">
+                <h2 class="about-us-title">About <span class="highlight">Us</span></h2>
+                <p class="about-us-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sunt laudantium magni vel praesentium quis quasi nostrum? Esse voluptate alias amet laborum, illo consequatur molestiae minima modi debitis animi aspernatur.</p>
+                <button class="about-us-btn">Explore</button>
+            </div>
+            <div class="img-side">
+                <!-- ::before -->
+                <img src="img/sweets-1.jpeg" alt="sweets">
+            </div>
+            
+        </div>
+    </section>
+    <!-- End About Us Section-->
+
+    <!-- Start Our Store -->
+    <main class="store">
+        <div class="inner-store">
+            <h1 class="store-title">Our <span class="highlight">Store</span></h1>
+            <div class="sortBtn">
+                <a href="#" class="btn filter-btn" data-filter="all">All</a>
+                <a href="#" class="btn filter-btn" data-filter="cakes">Cakes</a>
+                <a href="#" class="btn filter-btn" data-filter="cupcakes">Cupcake</a>
+                <a href="#" class="btn filter-btn" data-filter="sweets">Sweets</a>
+                <a href="#" class="btn filter-btn" data-filter="doughnuts">Doughnuts</a>
+            </div>
+            <!-- search box-->
+            <div class="search">
+                <form>
+                    <div class="input-group">
+                        <div class="input">
+                            <span class="search-box" id="search-icon"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="item...." id="search-item">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Store Items -->
+            <div id="store-items">
+                <!-- Single Item -->
+                <div class="store-item sweets" data-item="sweets">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/sweets-1.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">sweet item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">5</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card-->
+                </div>
+                <!-- end single item-->
+
+                <div class="store-item cupcakes" data-item="cupcakes">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/cupcake-1.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">cupcake item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">10</strong></h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <div class="store-item cakes" data-item="cakes">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/cake-2.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">cake item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">10</strong></h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <div class="store-item doughnuts" data-item="doughnuts">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/doughnut-2.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">doughnut item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">10</strong></h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <div class="store-item sweets" data-item="sweets">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/sweets-3.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">sweet item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">15</strong></h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <div class="store-item cupcakes" data-item="cupcakes">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/cupcake-3.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">cupcake item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">15</strong></h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <div class="store-item cakes" data-item="cakes">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/cake-3.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">cake item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">15</strong></h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <div class="store-item doughnuts" data-item="doughnuts">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/doughnut-3.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">doughnut item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">15</strong></h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <div class="store-item cupcakes" data-item="cupcakes">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/cupcake-2.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">cupcake item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">15</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <div class="store-item sweets" data-item="sweets">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/sweets-2.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">sweets item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">10</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <div class="store-item cakes" data-item="cakes">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/cake-1.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">cupcake item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">15</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <div class="store-item doughnuts" data-item="doughnuts">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/doughnut-1.jpeg" class="store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 id="store-item-name">doughnut item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price">15</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- End all store items -->
+            </div>
+        </div>
+    </main>
+    <!-- End Our Store -->
+
+    <script src="main.js"></script>
+</body>
+</html>
